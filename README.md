@@ -11,7 +11,7 @@ erstellen, die vom Player genutzt werden kann.
 Das heißt unter anderem muss Ihre Anwendung zum Beispiel in der Lage sein:
 * Eine bestehende Bibliothek auszulesen bzw. zu initialisieren
 * Neue Titel zu einer Bibliothek hinzuzufügen
-* Titel aus der Bibliothek zu löschen
+* Titel aus der Bibliothek zu lösche
 * Nach Titeln oder Meta-Daten in der Bibliothek zu suchen
 
 Es reicht aus, wenn die Anwendung eine reine „Command-Line-Interface“ (CLI) Anwendung ist – eine grafische Benutzeroberfläche ist nicht notwendig. Führen Sie den Benutzer dann mittels einer Menüführung durch das Programm.
