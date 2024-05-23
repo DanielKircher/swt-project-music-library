@@ -1,0 +1,6 @@
+//Speicher der Musikbibliothek
+
+Titel, Künstler, Album, Erscheinungsjahr ,Genre
+"Medizin","Sido","PAUL",2022, "Hip-Hop/Rap"
+"Self Care","Mac Miller","Swimming",2018, "Hip-Hop/Rap"
+"Eyes on Fire","Blue Foundation","Life Of A Ghost",0, "French Indie"
