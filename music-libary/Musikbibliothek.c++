@@ -1,7 +1,9 @@
 // Musikbibliothek
 
 #include <iostream>
+#include "suche.h"
 using namespace std;
+
 
 int main (){
     
@@ -32,7 +34,7 @@ int input;
         cin >> input;                                       // Funktionen
         switch(input){                      
             case 1:                                         // Suche
-            
+            suche();
                 continue;
 
             case 2:                                         // Playlists
