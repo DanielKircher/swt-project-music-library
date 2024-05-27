@@ -1,57 +1,62 @@
 // Musikbibliothek
-
 #include <iostream>
-#include "suche.h"
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <vector>
+#include "suche.c++"
+#include "playlists.c++"
 using namespace std;
 
-
-int main (){
-    
-    cout << "\n\nWilkommen im Software-Technik-Projekt\n";
+int main (){ 
+    cout << "\n\nWillkommen im Software-Technik-Projekt\n";
     cout << "von Maximilian und Daniel\n\n";
 
-// Starten der Musikbibliotek
-int start =1;
-    while(start != 0){
-        cout << "Drücke \"0\" um den\n";
+// Starten der Musikbibliotek 
+    int start=2;
+    while(start != 1){
+        cout << "Drücke (1) um den\n";
         cout << "Musikplayer zu starten.\n";
+        cout << "Drücke (0) um den.\n";
+        cout << "Musikplayer zu zu beenden.\n\n";
         cin >> start;
-        if (start != 0){
+        switch (start){
+            case 1:
+            break;
+            case 0:
+            cout << "Musikplayer wird beendet.";            
+            return 0;
+            default:
             cout << "\nUngültige Eingabe\n\n";              // Ungültige Eingabe
             continue;
         }  
     }
 
 // Hauptmenü
-int input;
+    int input;
     while(input != 0){
-        cout << "\nHauptmenü:\n";
+        cout << "\n*****Hauptmenü:*****\n";
         cout << "(1) Suche\n";
         cout << "(2) Playlists\n";
         cout << "(3) Aktuelle Wiedergabe\n";
-        cout << "(0) Beenden\n";
-        
-        cin >> input;                                       // Funktionen
+        cout << "(0) Beenden\n"; 
+        cin >> input;
         switch(input){                      
-            case 1:                                         // Suche
+            case 1:
             suche();
-                continue;
-
-            case 2:                                         // Playlists
-            
-                continue;
-
+            continue;
+            case 2:
+            playlist();
+            continue;
             case 3:                                         // Aktuelle Wiedergabe
-            
-                continue;
-
+                                                            
+            continue;
             case 0:                                         // Beenden
-                cout << "Musikplayer wird beendet.";
-                break;
-
+            cout << "Musikplayer wird beendet.";
+            break;
             default:                                        // Ungültige Eingabe
-                cout << "\n\nUngültige Eingabe\n";
-                continue;
+            cout << "\n\nUngültige Eingabe\n";
+            continue;
         }
     }
     return 0;
