@@ -5,13 +5,14 @@
 #include <string>
 #include <vector>
 #include "suche.c++"
-#include "playlists.c++"
+#include "playlist.c++"
+#include "test.c++"
 using namespace std;
 
 int main (){ 
     cout << "\n\nWillkommen im Software-Technik-Projekt\n";
     cout << "von Maximilian und Daniel\n\n";
-
+    
 // Starten der Musikbibliotek 
     int start=2;
     while(start != 1){
@@ -49,7 +50,7 @@ int main (){
             playlist();
             continue;
             case 3:                                         // Aktuelle Wiedergabe
-                                                            
+            test();                                              
             continue;
             case 0:                                         // Beenden
             cout << "Musikplayer wird beendet.";
