@@ -1,0 +1,512 @@
+[
+    {
+        "Titel": "Bohemian Rhapsody",
+        "Interpret": "Queen",
+        "Erscheinungsjahr": 1975,
+        "Album": "A Night at the Opera"
+    },
+    {
+        "Titel": "Hotel California",
+        "Interpret": "Eagles",
+        "Erscheinungsjahr": 1976,
+        "Album": "Hotel California"
+    },
+    {
+        "Titel": "Stairway to Heaven",
+        "Interpret": "Led Zeppelin",
+        "Erscheinungsjahr": 1971,
+        "Album": "Led Zeppelin IV"
+    },
+    {
+        "Titel": "Imagine",
+        "Interpret": "John Lennon",
+        "Erscheinungsjahr": 1971,
+        "Album": "Imagine"
+    },
+    {
+        "Titel": "Like a Rolling Stone",
+        "Interpret": "Bob Dylan",
+        "Erscheinungsjahr": 1965,
+        "Album": "Highway 61 Revisited"
+    },
+    {
+        "Titel": "Smells Like Teen Spirit",
+        "Interpret": "Nirvana",
+        "Erscheinungsjahr": 1991,
+        "Album": "Nevermind"
+    },
+    {
+        "Titel": "What's Going On",
+        "Interpret": "Marvin Gaye",
+        "Erscheinungsjahr": 1971,
+        "Album": "What's Going On"
+    },
+    {
+        "Titel": "Hey Jude",
+        "Interpret": "The Beatles",
+        "Erscheinungsjahr": 1968,
+        "Album": "The Beatles Again (Hey Jude)"
+    },
+    {
+        "Titel": "Billie Jean",
+        "Interpret": "Michael Jackson",
+        "Erscheinungsjahr": 1982,
+        "Album": "Thriller"
+    },
+    {
+        "Titel": "Sweet Child o' Mine",
+        "Interpret": "Guns N' Roses",
+        "Erscheinungsjahr": 1987,
+        "Album": "Appetite for Destruction"
+    },
+    {
+        "Titel": "Purple Haze",
+        "Interpret": "Jimi Hendrix",
+        "Erscheinungsjahr": 1967,
+        "Album": "Are You Experienced"
+    },
+    {
+        "Titel": "I Can't Get No Satisfaction",
+        "Interpret": "The Rolling Stones",
+        "Erscheinungsjahr": 1965,
+        "Album": "Out of Our Heads"
+    },
+    {
+        "Titel": "Yesterday",
+        "Interpret": "The Beatles",
+        "Erscheinungsjahr": 1965,
+        "Album": "Help!"
+    },
+    {
+        "Titel": "Good Vibrations",
+        "Interpret": "The Beach Boys",
+        "Erscheinungsjahr": 1966,
+        "Album": "Smiley Smile"
+    },
+    {
+        "Titel": "My Girl",
+        "Interpret": "The Temptations",
+        "Erscheinungsjahr": 1964,
+        "Album": "The Temptations Sing Smokey"
+    },
+    {
+        "Titel": "Respect",
+        "Interpret": "Aretha Franklin",
+        "Erscheinungsjahr": 1967,
+        "Album": "I Never Loved a Man the Way I Love You"
+    },
+    {
+        "Titel": "Born to Run",
+        "Interpret": "Bruce Springsteen",
+        "Erscheinungsjahr": 1975,
+        "Album": "Born to Run"
+    },
+    {
+        "Titel": "No Woman, No Cry",
+        "Interpret": "Bob Marley and the Wailers",
+        "Erscheinungsjahr": 1974,
+        "Album": "Natty Dread"
+    },
+    {
+        "Titel": "Superstition",
+        "Interpret": "Stevie Wonder",
+        "Erscheinungsjahr": 1972,
+        "Album": "Talking Book"
+    },
+    {
+        "Titel": "Ain't No Mountain High Enough",
+        "Interpret": "Marvin Gaye & Tammi Terrell",
+        "Erscheinungsjahr": 1967,
+        "Album": "United"
+    },
+    {
+        "Titel": "Lose Yourself",
+        "Interpret": "Eminem",
+        "Erscheinungsjahr": 2002,
+        "Album": "8 Mile Soundtrack"
+    },
+    {
+        "Titel": "Rolling in the Deep",
+        "Interpret": "Adele",
+        "Erscheinungsjahr": 2010,
+        "Album": "21"
+    },
+    {
+        "Titel": "Single Ladies (Put a Ring on It)",
+        "Interpret": "Beyoncé",
+        "Erscheinungsjahr": 2008,
+        "Album": "I Am... Sasha Fierce"
+    },
+    {
+        "Titel": "Shape of You",
+        "Interpret": "Ed Sheeran",
+        "Erscheinungsjahr": 2017,
+        "Album": "÷"
+    },
+    {
+        "Titel": "Blinding Lights",
+        "Interpret": "The Weeknd",
+        "Erscheinungsjahr": 2019,
+        "Album": "After Hours"
+    },
+    {
+        "Titel": "Bad Guy",
+        "Interpret": "Billie Eilish",
+        "Erscheinungsjahr": 2019,
+        "Album": "When We All Fall Asleep, Where Do We Go?"
+    },
+    {
+        "Titel": "Uptown Funk",
+        "Interpret": "Mark Ronson ft. Bruno Mars",
+        "Erscheinungsjahr": 2014,
+        "Album": "Uptown Special"
+    },
+    {
+        "Titel": "Old Town Road",
+        "Interpret": "Lil Nas X",
+        "Erscheinungsjahr": 2019,
+        "Album": "7 EP"
+    },
+    {
+        "Titel": "Someone Like You",
+        "Interpret": "Adele",
+        "Erscheinungsjahr": 2011,
+        "Album": "21"
+    },
+    {
+        "Titel": "Happy",
+        "Interpret": "Pharrell Williams",
+        "Erscheinungsjahr": 2013,
+        "Album": "G I R L"
+    },
+    {
+        "Titel": "Despacito",
+        "Interpret": "Luis Fonsi ft. Daddy Yankee",
+        "Erscheinungsjahr": 2017,
+        "Album": "Vida"
+    },
+    {
+        "Titel": "Sorry",
+        "Interpret": "Justin Bieber",
+        "Erscheinungsjahr": 2015,
+        "Album": "Purpose"
+    },
+    {
+        "Titel": "Senorita",
+        "Interpret": "Shawn Mendes & Camila Cabello",
+        "Erscheinungsjahr": 2019,
+        "Album": "Shawn Mendes"
+    },
+    {
+        "Titel": "Shake It Off",
+        "Interpret": "Taylor Swift",
+        "Erscheinungsjahr": 2014,
+        "Album": "1989"
+    },
+    {
+        "Titel": "Thinking Out Loud",
+        "Interpret": "Ed Sheeran",
+        "Erscheinungsjahr": 2014,
+        "Album": "x"
+    },
+    {
+        "Titel": "All of Me",
+        "Interpret": "John Legend",
+        "Erscheinungsjahr": 2013,
+        "Album": "Love in the Future"
+    },
+    {
+        "Titel": "Havana",
+        "Interpret": "Camila Cabello ft. Young Thug",
+        "Erscheinungsjahr": 2017,
+        "Album": "Camila"
+    },
+    {
+        "Titel": "Shallow",
+        "Interpret": "Lady Gaga & Bradley Cooper",
+        "Erscheinungsjahr": 2018,
+        "Album": "A Star Is Born Soundtrack"
+    },
+    {
+        "Titel": "Take Me to Church",
+        "Interpret": "Hozier",
+        "Erscheinungsjahr": 2013,
+        "Album": "Hozier"
+    },
+    {
+        "Titel": "Let Her Go",
+        "Interpret": "Passenger",
+        "Erscheinungsjahr": 2012,
+        "Album": "All the Little Lights"
+    },
+    {
+        "Titel": "Roar",
+        "Interpret": "Katy Perry",
+        "Erscheinungsjahr": 2013,
+        "Album": "Prism"
+    },
+    {
+        "Titel": "Call Me Maybe",
+        "Interpret": "Carly Rae Jepsen",
+        "Erscheinungsjahr": 2011,
+        "Album": "Kiss"
+    },
+    {
+        "Titel": "Royals",
+        "Interpret": "Lorde",
+        "Erscheinungsjahr": 2013,
+        "Album": "Pure Heroine"
+    },
+    {
+        "Titel": "Dark Horse",
+        "Interpret": "Katy Perry ft. Juicy J",
+        "Erscheinungsjahr": 2013,
+        "Album": "Prism"
+    },
+    {
+        "Titel": "Counting Stars",
+        "Interpret": "OneRepublic",
+        "Erscheinungsjahr": 2013,
+        "Album": "Native"
+    },
+    {
+        "Titel": "Radioactive",
+        "Interpret": "Imagine Dragons",
+        "Erscheinungsjahr": 2012,
+        "Album": "Night Visions"
+    },
+    {
+        "Titel": "All About That Bass",
+        "Interpret": "Meghan Trainor",
+        "Erscheinungsjahr": 2014,
+        "Album": "Title"
+    },
+    {
+        "Titel": "Chandelier",
+        "Interpret": "Sia",
+        "Erscheinungsjahr": 2014,
+        "Album": "1000 Forms of Fear"
+    },
+    {
+        "Titel": "Can't Stop the Feeling!",
+        "Interpret": "Justin Timberlake",
+        "Erscheinungsjahr": 2016,
+        "Album": "Trolls: Original Motion Picture Soundtrack"
+    },
+    {
+        "Titel": "Love Yourself",
+        "Interpret": "Justin Bieber",
+        "Erscheinungsjahr": 2015,
+        "Album": "Purpose"
+    },
+    {
+        "Titel": "Rockstar",
+        "Interpret": "Post Malone ft. 21 Savage",
+        "Erscheinungsjahr": 2017,
+        "Album": "Beerbongs & Bentleys"
+    },
+    {
+        "Titel": "Blank Space",
+        "Interpret": "Taylor Swift",
+        "Erscheinungsjahr": 2014,
+        "Album": "1989"
+    },
+    {
+        "Titel": "Sorry Not Sorry",
+        "Interpret": "Demi Lovato",
+        "Erscheinungsjahr": 2017,
+        "Album": "Tell Me You Love Me"
+    },
+    {
+        "Titel": "Closer",
+        "Interpret": "The Chainsmokers ft. Halsey",
+        "Erscheinungsjahr": 2016,
+        "Album": "Collage"
+    },
+    {
+        "Titel": "Cheap Thrills",
+        "Interpret": "Sia ft. Sean Paul",
+        "Erscheinungsjahr": 2016,
+        "Album": "This Is Acting"
+    },
+    {
+        "Titel": "Rockabye",
+        "Interpret": "Clean Bandit ft. Sean Paul & Anne-Marie",
+        "Erscheinungsjahr": 2016,
+        "Album": "What Is Love?"
+    },
+    {
+        "Titel": "See You Again",
+        "Interpret": "Wiz Khalifa ft. Charlie Puth",
+        "Erscheinungsjahr": 2015,
+        "Album": "Furious 7: Original Motion Picture Soundtrack"
+    },
+    {
+        "Titel": "We Don't Talk Anymore",
+        "Interpret": "Charlie Puth ft. Selena Gomez",
+        "Erscheinungsjahr": 2016,
+        "Album": "Nine Track Mind"
+    },
+    {
+        "Titel": "Love Me Like You Do",
+        "Interpret": "Ellie Goulding",
+        "Erscheinungsjahr": 2015,
+        "Album": "Delirium"
+    },
+    {
+        "Titel": "Sorry",
+        "Interpret": "Justin Bieber",
+        "Erscheinungsjahr": 2015,
+        "Album": "Purpose"
+    },
+    {
+        "Titel": "Lean On",
+        "Interpret": "Major Lazer & DJ Snake ft. MØ",
+        "Erscheinungsjahr": 2015,
+        "Album": "Peace Is the Mission"
+    },
+    {
+        "Titel": "Bad Blood",
+        "Interpret": "Taylor Swift ft. Kendrick Lamar",
+        "Erscheinungsjahr": 2014,
+        "Album": "1989"
+    },
+    {
+        "Titel": "Stressed Out",
+        "Interpret": "Twenty One Pilots",
+        "Erscheinungsjahr": 2015,
+        "Album": "Blurryface"
+    },
+    {
+        "Titel": "Can't Feel My Face",
+        "Interpret": "The Weeknd",
+        "Erscheinungsjahr": 2015,
+        "Album": "Beauty Behind the Madness"
+    },
+    {
+        "Titel": "This Is What You Came For",
+        "Interpret": "Calvin Harris ft. Rihanna",
+        "Erscheinungsjahr": 2016,
+        "Album": "Funk Wav Bounces Vol. 1"
+    },
+    {
+        "Titel": "Humble",
+        "Interpret": "Kendrick Lamar",
+        "Erscheinungsjahr": 2017,
+        "Album": "DAMN."
+    },
+    {
+        "Titel": "Bad Romance",
+        "Interpret": "Lady Gaga",
+        "Erscheinungsjahr": 2009,
+        "Album": "The Fame Monster"
+    },
+    {
+        "Titel": "Grenade",
+        "Interpret": "Bruno Mars",
+        "Erscheinungsjahr": 2010,
+        "Album": "Doo-Wops & Hooligans"
+    },
+    {
+        "Titel": "E.T.",
+        "Interpret": "Katy Perry ft. Kanye West",
+        "Erscheinungsjahr": 2010,
+        "Album": "Teenage Dream"
+    },
+    {
+        "Titel": "Fancy",
+        "Interpret": "Iggy Azalea ft. Charli XCX",
+        "Erscheinungsjahr": 2014,
+        "Album": "The New Classic"
+    },
+    {
+        "Titel": "Rolling in the Deep",
+        "Interpret": "Adele",
+        "Erscheinungsjahr": 2010,
+        "Album": "21"
+    },
+    {
+        "Titel": "What Do You Mean?",
+        "Interpret": "Justin Bieber",
+        "Erscheinungsjahr": 2015,
+        "Album": "Purpose"
+    },
+    {
+        "Titel": "Somebody That I Used to Know",
+        "Interpret": "Gotye ft. Kimbra",
+        "Erscheinungsjahr": 2011,
+        "Album": "Making Mirrors"
+    },
+    {
+        "Titel": "Shake It Off",
+        "Interpret": "Taylor Swift",
+        "Erscheinungsjahr": 2014,
+        "Album": "1989"
+    },
+    {
+        "Titel": "Blinding Lights",
+        "Interpret": "The Weeknd",
+        "Erscheinungsjahr": 2019,
+        "Album": "After Hours"
+    },
+    {
+        "Titel": "Circles",
+        "Interpret": "Post Malone",
+        "Erscheinungsjahr": 2019,
+        "Album": "Hollywood's Bleeding"
+    },
+    {
+        "Titel": "7 Rings",
+        "Interpret": "Ariana Grande",
+        "Erscheinungsjahr": 2019,
+        "Album": "Thank U, Next"
+    },
+    {
+        "Titel": "Watermelon Sugar",
+        "Interpret": "Harry Styles",
+        "Erscheinungsjahr": 2019,
+        "Album": "Fine Line"
+    },
+    {
+        "Titel": "Dynamite",
+        "Interpret": "BTS",
+        "Erscheinungsjahr": 2020,
+        "Album": "Be"
+    },
+    {
+        "Titel": "Levitating",
+        "Interpret": "Dua Lipa ft. DaBaby",
+        "Erscheinungsjahr": 2020,
+        "Album": "Future Nostalgia"
+    },
+    {
+        "Titel": "Peaches",
+        "Interpret": "Justin Bieber ft. Daniel Caesar & Giveon",
+        "Erscheinungsjahr": 2021,
+        "Album": "Justice"
+    },
+    {
+        "Titel": "Good 4 U",
+        "Interpret": "Olivia Rodrigo",
+        "Erscheinungsjahr": 2021,
+        "Album": "Sour"
+    },
+    {
+        "Titel": "Montero (Call Me by Your Name)",
+        "Interpret": "Lil Nas X",
+        "Erscheinungsjahr": 2021,
+        "Album": "Montero"
+    },
+    {
+        "Titel": "Stay",
+        "Interpret": "The Kid LAROI & Justin Bieber",
+        "Erscheinungsjahr": 2021,
+        "Album": "F*ck Love 3: Over You"
+    },
+    {
+        "Titel": "Heat Waves",
+        "Interpret": "Glass Animals",
+        "Erscheinungsjahr": 2020,
+        "Album": "Dreamland"
+    }
+]
