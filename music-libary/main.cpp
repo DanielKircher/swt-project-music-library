@@ -2,6 +2,10 @@
 
 
 int main(){
+    std::string actualSong;
+    std::string nextSong;
+    std::string lastSong;
+    int choiceWiedergabe;
     std::cout << "\nWillkommen im Software-Technik-Projekt\n";
     std::cout << "von Maximilian und Daniel\n\n";
 // Start der Anwendung;
@@ -26,7 +30,7 @@ int main(){
     while(input != 0){
         std::cout << "\n*****Hauptmenü:*****\n";
         std::cout << "(1) Suche\n";
-        std::cout << "(2) Playlists\n";
+        std::cout << "(2) Lieblingssongs\n";
         std::cout << "(3) Aktuelle Wiedergabe\n";
         std::cout << "(0) Beenden\n\n";
         std::cin >> input;
@@ -52,16 +56,20 @@ int main(){
                     }
                 }
                 continue;
-    // Playlists
+    // Lieblingssongs
             case 2:
-                int choicePlaylists;
-                while (choicePlaylists !=0){
-                    std::cout << "\n*****Playlists:*****\n";
-                    std::cout << "(1) Lieblingslieder\n";
+                int choiceLieblingssongs;
+                while (choiceLieblingssongs !=0){
+                    std::cout << "\n*****Lieblingssongs:*****\n";
+                    std::cout << "(1) Suche\n";
+                    std::cout << "(2) Alle anzeigen\n";
                     std::cout << "(0) Zurück\n\n";
-                    std::cin >> choicePlaylists;
-                    switch(choicePlaylists){
+                    std::cin >> choiceLieblingssongs;
+                    switch(choiceLieblingssongs){
                     case 1:
+                        std::cout << "Suche";
+                        continue;
+                    case 2:
                         std::cout << "Lieblingslieder";
                         continue;
                     case 0:
@@ -74,21 +82,30 @@ int main(){
                 continue;
     // Aktuelle Wiedergabe
             case 3:
-                int choiceWiedergabe;
-                while (choiceWiedergabe !=0){
-                    std::cout << "\n*****Aktuelle Wiedergabe:*****\n";
-                    std::cout << "(1) In Cloud suchen\n";
-                    std::cout << "(0) Zurück\n\n";
-                    std::cin >> choiceWiedergabe;
-                    switch(choiceWiedergabe){
-                    case 1:
-                        std::cout << "Suchfunktion";
-                        continue;
-                    case 0:
-                        break;
-                    default:
-                        std::cout << "FEHLER: Ungültige Eingabe\n";
-                        continue;
+                if (actualSong.empty()){
+                    std::cout << "Keine Wiedergabe\n";
+                }
+                else{
+                    while (choiceWiedergabe !=0){
+                        std::cout << "\n*****Aktuelle Wiedergabe:*****\n";
+                        std::cout << actualSong << std::endl;
+                        std::cout << "(1) Letzter Song\n\n";
+                        std::cout << "(3) Nächster Song\n\n";
+                        std::cout << "(0) Zurück\n\n";
+                        std::cin >> choiceWiedergabe;
+                        switch(choiceWiedergabe){
+                        case 1:
+                            actualSong = lastSong;
+                            continue;
+                        case 3:
+                            actualSong = nextSong;
+                            continue;
+                        case 0:
+                            break;
+                        default:
+                            std::cout << "FEHLER: Ungültige Eingabe\n";
+                            continue;
+                        }
                     }
                 }   
                 continue;
