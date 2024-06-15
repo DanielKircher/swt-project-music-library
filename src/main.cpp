@@ -1,4 +1,4 @@
-// Version 2.2.2
+// Version 2.2.3
 
 #include <iostream>
 #include "json.hpp"
@@ -31,6 +31,10 @@ int main(){
                     continue;
         }  
     }
+// LADEN DER DATEIEN:
+
+            //Funktion zum Laden einer json-Datei
+
 // HAUPTMENUE:
     choiceMenue = -1;
     while(choiceMenue != 0){
@@ -45,7 +49,9 @@ int main(){
                     std::cin >> choiceSuche;
                     switch(choiceSuche){
                         case 1:
-                            std::cout << "Suchfunktion";
+                            // Suchfunktion - Übergabe des in Funktion gewählten Titels
+                            // Funktion - Hinzufügen zu Lieblingssongs
+                            // Funktion - Abspielen Des Titels = Übergabe in actualSong
                         continue;
                         case 0:
                             break;
@@ -63,10 +69,13 @@ int main(){
                     std::cin >> choiceLieblingssongs;
                     switch(choiceLieblingssongs){
                         case 1:
-                            std::cout << "Suche";
+                            // Suchfunktion - Übergabe des in Funktion gewählten Titels
+                            // Menü zum Ausgewälten Song
+                            // Funktion - Löschen des Titels aus den Lieblingssongs
+                            // Funktion - Abspielen Des Titels = Übergabe in actualSong
                             continue;
                         case 2:
-                            std::cout << "Lieblingslieder";
+                            // Alle Lieblingssongs anzeigen
                             continue;
                         case 0:
                             break;
