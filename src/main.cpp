@@ -1,4 +1,4 @@
-// Version 2.2.1
+// Version 2.2.2
 
 #include <iostream>
 #include "json.hpp"
@@ -9,13 +9,14 @@ using json = nlohmann::json;
 
 int main(){
     std::string actualSong;     std::string nextSong;       std::string lastSong;
-    int choiceWiedergabe;
+    int start;                  int choiceMenue;            int choiceSuche;
+    int choiceWiedergabe;       int choiceLieblingssongs;   
 
 // WILKOMMEN:
     printWILLKOMMEN();
 
 // START:
-    int start;
+    start = -1;
     while(start != 1){
         printSTART();
         std::cin >> start;
@@ -31,14 +32,14 @@ int main(){
         }  
     }
 // HAUPTMENUE:
-    int choiceMenue;
+    choiceMenue = -1;
     while(choiceMenue != 0){
         printHAUPTMENUE();
         std::cin >> choiceMenue;
         switch(choiceMenue){
 
             case 1: // SUCHE
-                int choiceSuche;
+                choiceSuche = -1;
                 while (choiceSuche !=0){
                     printSUCHE(); 
                     std::cin >> choiceSuche;
@@ -56,7 +57,7 @@ int main(){
             continue;
 
             case 2: // LIEBLINGSSONGS
-                int choiceLieblingssongs;
+                choiceLieblingssongs = -1;
                 while (choiceLieblingssongs !=0){
                     printLIEBLINGSSONGS();
                     std::cin >> choiceLieblingssongs;
@@ -81,6 +82,7 @@ int main(){
                     printNoWIEDERGABE();
                 }
                 else{
+                    choiceWiedergabe = -1;
                     while (choiceWiedergabe !=0){       
                         printWIEDERGABE(actualSong);
                         std::cin >> choiceWiedergabe;
