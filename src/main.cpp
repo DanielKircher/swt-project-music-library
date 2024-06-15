@@ -1,17 +1,20 @@
-// Version 2.2.0
+// Version 2.2.1
 
 #include <iostream>
+#include "json.hpp"
 #include "text.hpp"
+
+using json = nlohmann::json;
 
 
 int main(){
     std::string actualSong;     std::string nextSong;       std::string lastSong;
     int choiceWiedergabe;
 
-// Willkommen:
+// WILKOMMEN:
     printWILLKOMMEN();
 
-// Start der Anwendung:
+// START:
     int start;
     while(start != 1){
         printSTART();
@@ -27,7 +30,7 @@ int main(){
                     continue;
         }  
     }
-// Hauptmenü:
+// HAUPTMENUE:
     int choiceMenue;
     while(choiceMenue != 0){
         printHAUPTMENUE();
