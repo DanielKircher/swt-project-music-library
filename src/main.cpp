@@ -1,11 +1,9 @@
-// Version 2.2.3
-
-#include <iostream>
+#include <iostream>                 // ============ Version 2.2.5 ============ //
 #include "json.hpp"
 #include "text.hpp"
+#include "einlesen.hpp"
 
 using json = nlohmann::json;
-
 
 int main(){
     std::string actualSong;     std::string nextSong;       std::string lastSong;
@@ -32,8 +30,8 @@ int main(){
         }  
     }
 // LADEN DER DATEIEN:
-
-            //Funktion zum Laden einer json-Datei
+    std::vector<Song> songs = readSongsFromFile("songs.json");
+    std::vector<Song> lieblingssongs = readSongsFromFile("lieblingssongs.json");
 
 // HAUPTMENUE:
     choiceMenue = -1;

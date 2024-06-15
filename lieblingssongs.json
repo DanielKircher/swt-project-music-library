@@ -1,0 +1,20 @@
+[
+    {
+        "Titel": "Bohemian Rhapsody",
+        "Interpret": "Queen",
+        "Erscheinungsjahr": 1975,
+        "Album": "A Night at the Opera"
+    },
+    {
+        "Titel": "Hotel California",
+        "Interpret": "Eagles",
+        "Erscheinungsjahr": 1976,
+        "Album": "Hotel California"
+    },
+    {
+        "Titel": "Stairway to Heaven",
+        "Interpret": "Led Zeppelin",
+        "Erscheinungsjahr": 1971,
+        "Album": "Led Zeppelin IV"
+    }
+]
