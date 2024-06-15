@@ -97,9 +97,12 @@ int main(){
                         std::cin >> choiceWiedergabe;
                         switch(choiceWiedergabe){
                         case 1:
+                            // lastSong = Funktion die den vorherigen Song aus Lieblingssongs übergibt
                             actualSong = lastSong;
+                            
                             continue;
                         case 3:
+                            // nextSong = Funktion die den nächsten Song aus Lieblingssongs übergibt
                             actualSong = nextSong;
                             continue;
                         case 0:
