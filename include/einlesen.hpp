@@ -6,16 +6,9 @@
 #include <vector>
 #include <fstream>
 #include "json.hpp"
+#include "struct.hpp"
 
 using json = nlohmann::json;
-
-// Struktur zum Speichern der Liedinformationen
-struct Song {
-    std::string titel;
-    std::string interpret;
-    int erscheinungsjahr;
-    std::string album;
-};
 
 // Definition der Funktion zum Einlesen der JSON-Datei
 std::vector<Song> readSongsFromFile(const std::string& filename) {
@@ -31,9 +24,9 @@ std::vector<Song> readSongsFromFile(const std::string& filename) {
     std::vector<Song> songs;
     for (const auto& item : j) {
         Song song;
-        song.titel = item.at("Titel").get<std::string>();
-        song.interpret = item.at("Interpret").get<std::string>();
-        song.erscheinungsjahr = item.at("Erscheinungsjahr").get<int>();
+        song.title = item.at("Titel").get<std::string>();
+        song.artist = item.at("Interpret").get<std::string>();
+        song.year = item.at("Erscheinungsjahr").get<int>();
         song.album = item.at("Album").get<std::string>();
         songs.push_back(song);
     }
