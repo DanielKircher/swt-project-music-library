@@ -96,14 +96,10 @@ int main(){
                     std::cin >> choiceLieblingssongs;
                     switch(choiceLieblingssongs){
                         case 1:
-                            // Suchfunktion - Übergabe des in Funktion gewählten Titels
-                            actualSong = searchSong(lieblingssongs);
-                            if(!actualSong.empty()){
+                                // Suchfunktion - Übergabe des in Funktion gewählten Titels
                                 // Menü zum Ausgewälten Song
                                 // Funktion - Löschen des Titels aus den Lieblingssongs
                                 // Funktion - Abspielen Des Titels = Übergabe in actualSong
-                                std::cout << "Lieblingssong gefunden: " << actualSong << std::endl;
-                            }
                             continue;
                         case 2:
                             // Alle Lieblingssongs anzeigen
