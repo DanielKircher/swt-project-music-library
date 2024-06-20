@@ -4,15 +4,16 @@
 #include "struct.hpp"
 #include "loadJson.hpp"
 #include "search.hpp"
+#include "playSong.hpp"
 
 using json = nlohmann::json;
 
-std::string SUCHE(std::vector<Song> songs,std::string actualSong, int play){
+std::string SUCHE(std::vector<Song> songs,std::string actualSong){
     // Suchfunktion
     std::string searchResult = searchSong(songs);
     int choiceResult = -1;
         while (choiceResult != 0){
-            if (play == 1){
+            if (actualSong == searchResult){
                 std::cout << "=============== " + searchResult + " ===============" << std::endl << std::endl;
                 std::cout << "(1) Stop" << std::endl;
                 std::cout << "(2) zu Lieblingssongs hinzufügen" << std::endl;
@@ -27,14 +28,7 @@ std::string SUCHE(std::vector<Song> songs,std::string actualSong, int play){
             std::cin >> choiceResult;
             switch(choiceResult){
                 case 1:
-                    if  (play == 1){
-                        play = 0;
-                        actualSong = "";
-                    }
-                    else {
-                        play = 1;
-                        actualSong = searchResult;
-                    }
+                    actualSong = playSong(actualSong, searchResult);
                 case 2:
                     // Funktion zum hinzufügen zu Lieblingssongs
                 case 0:

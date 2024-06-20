@@ -1,19 +1,19 @@
-#include <iostream>                     // ===== Version 3.1.0 =====
+#include <iostream>                     // ===== Version 3.2.0 =====
 #include <vector>
 #include "json.hpp"
 #include "text.hpp"
 #include "struct.hpp"
 #include "loadJson.hpp"
-#include "search.hpp"
 #include "SUCHE.hpp"
+#include "LIEBLINGSSONGS.hpp"
+#include "WIEDERGABE.hpp"
 
 using json = nlohmann::json;
 
 int main(){
     std::string actualSong;     std::string nextSong;       std::string lastSong;
-    std::string searchResult;             int play = -1;
+    std::string searchResult;   int play = -1;
     int start;                  int choiceMenue;            int choiceSuche;
-    int choiceWiedergabe;       int choiceLieblingssongs;   
 
     // WILKOMMEN:
     printWILLKOMMEN();
@@ -52,7 +52,7 @@ int main(){
                     std::cin >> choiceSuche;
                     switch(choiceSuche){ 
                         case 1: //Suche in Cloud
-                            actualSong = SUCHE(songs, actualSong, play);
+                            actualSong = SUCHE(songs, actualSong);
                             continue;
                         case 0: //Zurück
                             break;
@@ -64,55 +64,11 @@ int main(){
                 continue;
 
             case 2: // LIEBLINGSSONGS
-                choiceLieblingssongs = -1;
-                while (choiceLieblingssongs !=0){
-                    printLIEBLINGSSONGS();
-                    std::cin >> choiceLieblingssongs;
-                    switch(choiceLieblingssongs){
-                        case 1:
-                                // Suchfunktion - Übergabe des in Funktion gewählten Titels
-                                // Menü zum Ausgewälten Song
-                                // Funktion - Löschen des Titels aus den Lieblingssongs
-                                // Funktion - Abspielen Des Titels = Übergabe in actualSong
-                            continue;
-                        case 2:
-                            // Alle Lieblingssongs anzeigen
-                            continue;
-                        case 0:
-                            break;
-                        default:
-                            printFEHLER();
-                            continue;
-                    }
-                }
+                LIEBLINGSSONGS(actualSong, play);
                 continue;
 
             case 3: // WIEDERGABE
-                if (actualSong.empty()){
-                    printNoWIEDERGABE();
-                }
-                else{
-                    choiceWiedergabe = -1;
-                    while (choiceWiedergabe !=0){       
-                        printWIEDERGABE(actualSong);
-                        std::cin >> choiceWiedergabe;
-                        switch(choiceWiedergabe){
-                            case 1:
-                                // lastSong = Funktion die den vorherigen Song aus Lieblingssongs übergibt
-                                actualSong = lastSong;
-                                continue;
-                            case 3:
-                                // nextSong = Funktion die den nächsten Song aus Lieblingssongs übergibt
-                                actualSong = nextSong;
-                                continue;
-                            case 0:
-                                break;
-                            default:
-                                printFEHLER();
-                                continue;
-                        }
-                    }
-                }   
+                WIEDERGABE(actualSong, play);
                 continue;
             case 0:
                 printBEENDEN();
