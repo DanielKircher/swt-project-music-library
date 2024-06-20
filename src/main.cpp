@@ -1,16 +1,17 @@
-#include <iostream>                     // ===== Version 3.0.1 =====
+#include <iostream>                     // ===== Version 3.1.0 =====
 #include <vector>
 #include "json.hpp"
 #include "text.hpp"
 #include "struct.hpp"
 #include "loadJson.hpp"
 #include "search.hpp"
+#include "SUCHE.hpp"
 
 using json = nlohmann::json;
 
 int main(){
     std::string actualSong;     std::string nextSong;       std::string lastSong;
-    std::string searchResult;   int choiceResult;           int play;
+    std::string searchResult;             int play = -1;
     int start;                  int choiceMenue;            int choiceSuche;
     int choiceWiedergabe;       int choiceLieblingssongs;   
 
@@ -49,38 +50,11 @@ int main(){
                 while (choiceSuche !=0){
                     printSUCHE(); 
                     std::cin >> choiceSuche;
-                    switch(choiceSuche){
-                        
-                        case 1:
-                            // Suchfunktion
-                            searchResult = searchSong(songs);
-                            choiceResult = -1;
-                            while (choiceResult != 0){
-                                printRESULT(searchResult, play);
-                                std::cin >> choiceResult;
-                                switch(choiceResult){
-                                    case 1:
-                                        if  (play == 1){
-                                            play = 0;
-                                            actualSong = "";
-                                        }
-                                        else {
-                                            play = 1;
-                                            actualSong = searchResult;
-                                        }
-                                    case 2:
-                                        // Funktion zum hinzufügen zu Lieblingssongs
-                                    case 0:
-                                        break;
-                                    default:
-                                        printFEHLER();
-                                        continue;
-
-                                }
-                            }
+                    switch(choiceSuche){ 
+                        case 1: //Suche in Cloud
+                            actualSong = SUCHE(songs, actualSong, play);
                             continue;
-                        
-                        case 0:
+                        case 0: //Zurück
                             break;
                         default:
                             printFEHLER();
