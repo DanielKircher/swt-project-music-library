@@ -24,11 +24,11 @@ std::string WIEDERGABE(std::string actualSong, int play){
             std::cin >> choiceWiedergabe;
             switch(choiceWiedergabe){
                 case 1:
-                    // lastSong = Funktion die den vorherigen Song aus Lieblingssongs übergibt
+                    // lastSong = Funktion die den vorherigen Song aus Lieblingssongs oder der Cloud übergibt
                     actualSong = lastSong;
                     continue;
                 case 3:
-                    // nextSong = Funktion die den nächsten Song aus Lieblingssongs übergibt
+                    // nextSong = Funktion die den nächsten Song aus Lieblingssongs oder der Cloud übergibt
                     actualSong = nextSong;
                     continue;
                 case 0:
