@@ -64,7 +64,7 @@ int main(){
                 continue;
 
             case 2: // LIEBLINGSSONGS
-                LIEBLINGSSONGS(actualSong, play);
+                LIEBLINGSSONGS(lieblingssongs, actualSong, play);
                 continue;
 
             case 3: // WIEDERGABE

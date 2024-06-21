@@ -8,8 +8,9 @@
 
 using json = nlohmann::json;
 
-std::string LIEBLINGSSONGS(std::string actualSong, int play){
+std::string LIEBLINGSSONGS(std::vector<Song> lieblingssongs, std::string actualSong, int play){
 
+    std::string searchResult;
     int choiceLieblingssongs = -1;
     while (choiceLieblingssongs !=0){
 
@@ -21,6 +22,7 @@ std::string LIEBLINGSSONGS(std::string actualSong, int play){
         std::cin >> choiceLieblingssongs;
         switch(choiceLieblingssongs){
             case 1:
+                searchResult = searchSong(lieblingssongs);
                 // Suchfunktion - Übergabe des in Funktion gewählten Titels
                 // Menü zum Ausgewälten Song
                 // Funktion - Löschen des Titels aus den Lieblingssongs

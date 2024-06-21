@@ -16,5 +16,11 @@
         "Interpret": "Led Zeppelin",
         "Erscheinungsjahr": 1971,
         "Album": "Led Zeppelin IV"
+    },
+    {
+        "Titel": "Imagine",
+        "Interpret": "John Lennon",
+        "Erscheinungsjahr": 1971,
+        "Album": "Imagine"
     }
 ]
