@@ -1,4 +1,4 @@
-#include <iostream>                     // ===== Version 3.2.0 =====
+#include <iostream>                     // ===== Version 3.2.1 =====
 #include <vector>
 #include "json.hpp"
 #include "text.hpp"
@@ -12,7 +12,7 @@ using json = nlohmann::json;
 
 int main(){
     std::string actualSong;     std::string nextSong;       std::string lastSong;
-    std::string searchResult;   int play = -1;
+    std::string searchResult;   bool play;
     int start;                  int choiceMenue;            int choiceSuche;
 
     // WILKOMMEN:
