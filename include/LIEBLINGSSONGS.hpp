@@ -4,7 +4,7 @@
 #include "struct.hpp"
 #include "loadJson.hpp"
 #include "search.hpp"
-
+#include "playSong.hpp"
 
 using json = nlohmann::json;
 
@@ -23,10 +23,36 @@ std::string LIEBLINGSSONGS(std::vector<Song> lieblingssongs, std::string actualS
         switch(choiceLieblingssongs){
             case 1:
                 searchResult = searchSong(lieblingssongs);
-                // Suchfunktion - Übergabe des in Funktion gewählten Titels
-                // Menü zum Ausgewälten Song
-                // Funktion - Löschen des Titels aus den Lieblingssongs
-                // Funktion - Abspielen Des Titels = Übergabe in actualSong
+                int choiceResult = -1;
+                while (choiceResult != 0){
+                    if (actualSong.empty()){
+                        std::cout << "=============== " + searchResult + " ===============" << std::endl << std::endl;
+                        std::cout << "(1) Play" << std::endl;
+                        std::cout << "(2) Aus Lieblingssongs löschen" << std::endl;
+                        std::cout << "(0) Zurück" << std::endl << std::endl;
+                    }
+                    else{
+                        std::cout << "=============== " + searchResult + " ===============" << std::endl << std::endl;
+                        std::cout << "(1) Stop" << std::endl;
+                        std::cout << "(2) Aus Lieblingssongs löschen" << std::endl;
+                        std::cout << "(0) Zurück" << std::endl << std::endl;
+                    }
+                    std::cin >> choiceResult;
+                    switch(choiceResult){
+                        case 1:
+                            actualSong = playSong(actualSong, searchResult);
+                            continue;
+                        case 2:
+                            // Funktion zum löschen aus Lieblingssongs
+                            continue;
+                        case 0:
+                            break;
+                        default:
+                            std::cout << "FEHLER: Ungültige Eingabe" << std::endl << std::endl;
+                            continue;
+
+                    }
+                }
                 continue;
             case 2:
                 // Alle Lieblingssongs anzeigen
