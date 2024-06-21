@@ -4,7 +4,6 @@
 #include "struct.hpp"
 #include "loadJson.hpp"
 #include "search.hpp"
-#include "playSong.hpp"
 
 using json = nlohmann::json;
 
@@ -12,6 +11,7 @@ std::string LIEBLINGSSONGS(std::vector<Song> lieblingssongs, std::string actualS
 
     std::string searchResult;
     int choiceLieblingssongs = -1;
+    int choiceResult = -1;
     while (choiceLieblingssongs !=0){
 
         std::cout << "=============== Lieblingssongs ===============" << std::endl << std::endl;
@@ -23,7 +23,7 @@ std::string LIEBLINGSSONGS(std::vector<Song> lieblingssongs, std::string actualS
         switch(choiceLieblingssongs){
             case 1:
                 searchResult = searchSong(lieblingssongs);
-                int choiceResult = -1;
+                
                 while (choiceResult != 0){
                     if (actualSong.empty()){
                         std::cout << "=============== " + searchResult + " ===============" << std::endl << std::endl;
@@ -40,7 +40,7 @@ std::string LIEBLINGSSONGS(std::vector<Song> lieblingssongs, std::string actualS
                     std::cin >> choiceResult;
                     switch(choiceResult){
                         case 1:
-                            actualSong = playSong(actualSong, searchResult);
+                            //actualSong = playSong(actualSong, searchResult);
                             continue;
                         case 2:
                             // Funktion zum löschen aus Lieblingssongs

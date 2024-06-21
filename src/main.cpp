@@ -12,7 +12,7 @@ using json = nlohmann::json;
 
 int main(){
     std::string actualSong;     std::string nextSong;       std::string lastSong;
-    std::string searchResult;   bool play;
+    std::string searchResult;   int play;
     int start;                  int choiceMenue;            int choiceSuche;
 
     // WILKOMMEN:
